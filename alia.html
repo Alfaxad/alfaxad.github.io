@@ -1,3 +1,6 @@
+To reduce the size of the first image right after the title and ensure it's centered in the middle, you can update the CSS and HTML like this:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,6 +73,11 @@
             display: block; /* Center the image */
         }
         
+        /* Special size for the first image after the header */
+        .header-img {
+            width: 40%; /* Reduced the first image to 40% of its current size */
+        }
+        
     </style>
 </head>
 <body>
@@ -77,8 +85,8 @@
 <header>
     <h1>ALIA - Automated Low-flow Irrigation Apparatus</h1>
     <div class="date">Alfaxad Eyembe, September 30, 2024</div>
-    <!-- First image after header -->
-    <img src="images/solarpanels.png" alt="Solar panels powering irrigation system">
+    <!-- First image after header with reduced size to 40% -->
+    <img src="images/solarpanels.png" alt="Solar panels powering irrigation system" class="header-img">
 </header>
 
 <section>
@@ -110,3 +118,10 @@
 
 </body>
 </html>
+```
+
+### Updates:
+1. **First image right after the title** is now set to 40% of its size.
+2. **All images remain centered** in the middle.
+
+You can copy and paste this into your HTML file. Let me know if further adjustments are needed!
