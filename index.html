@@ -1,327 +1,247 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <!-- Google analytics tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-STGLQW4BJX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-STGLQW4BJX');
-    </script>
-
-    <!-- Title -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alfaxad Eyembe</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1000">
-
-    <!-- Isotope JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 80px;
+        }
+        
+        .header-left h1 {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+        
+        .header-left h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-left: 40px;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            background-color: #f5f5f5;
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #333;
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight-text {
+            background-color: #e8f3ff;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .contact-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-links a {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .contact-links a:hover {
+            color: #0066cc;
+        }
+        
+        .highlights-list {
+            list-style: none;
+        }
+        
+        .highlights-list li {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .highlights-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+        }
+        
+        .date {
+            color: #999;
+            font-size: 14px;
+            margin-right: 8px;
+        }
+        
+        .news-item {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            border-left: 3px solid #0066cc;
+        }
+        
+        .news-item p {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+            
+            .profile-image {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
     </style>
-  </head>
-
-  <body id="body">
-
-    <div id="main">
-      <div id="intro">
-        <div id="intro-text">
-          <h1>Alfaxad Eyembe</h1>
-          <p>
-            Hello there! I study mechanical & electrical systems engineering at  <a href="https://www.kuas.ac.jp/en/f-r/eng/">KUAS</a>, where I focus on AI and Robotics .
-            <div id="more-bio" style="display: None">
-              <br>
-              <p>Alfaxad is a mechanical and electrical systems engineering student at Kyoto University of Advanced Science (KUAS), driven by a personal mission to propel Africa's technological advancements. 
-                His work spans cutting-edge fields such as AI and robotics, with a current focus on leveraging AI in artificial life, healthcare, agriculture, and real-world infrastructure.
-                Outside academics, Alfaxad enjoys coding, playing video games, and immersing himself in sci-fi novels or comic books, particularly as a devoted fan of Calvin and Hobbes.
-              </p>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>alfaxad eyembe</h1>
+                <h2>hi! i'm alfa.</h2>
             </div>
-            <br>
-            <a href="javascript:toggle_bio()">Formal Bio</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/Alfaxad">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://scholar.google.com/citations?user=pEwusqEAAAAJ&hl=en">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/alfaxad-eyembe-b29a45162/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://twitter.com/alfxad">Twitter</a>
-            <br><br>
-            <br><br>
-          </p>
-        </div>
-        <div id="intro-image">
-          <img src="images/DF-Photoroom.jpg">
-        </div>
-      </div>
-
-      <div id="filters" class="button-group">
-        <!-- <button class="button" data-filter="*">Show All</button> -->
-        <button class="button is-checked" data-filter=".highlight">Highlights</button>
-        <button class="button" data-filter=".publication">Research</button>
-        <button class="button" data-filter=".talk">News</button>
-        <button class="button" data-filter=".misc">Misc</button>
-      </div>
-
-      <div class="grid">
-
-        <!-- Highlights -->
-        <div class="list-item highlight description" data-category="highlight">
-          Some recent highlights about my Projects:
-        </div>
-
-        <!-- Preview Videos -->
-        <div class="list-item highlight previews" data-category="highlight">
-
-          <a href="https://bit.ly/AlfaDeep">
-            <img class="preview1" src="images/AlfaDeep.png" alt="Preview Image" width="auto" height="auto">
-          </a>
-          <a href="https://bit.ly/EcoSynthAI">
-            <img class="preview1" src="images/Ecosynth.png" alt="Preview Image" width="auto" height="auto">
-          </a>
-          <a href="https://www.canva.com/design/DAF0Jt9Vi0A/OlQI9ov_Oj04a3iRO-D84g/edit?utm_content=DAF0Jt9Vi0A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-            <img class="preview1" src="images/ETN.png" alt="Preview Image" width="auto" height="auto">
-          </a>
-
-        </div>
-
-        <!-- Truncated Set of Highlights (Shown by Default) -->
-        <div id="main-highlights">
-
-          <div class="list-item highlight" data-category="highlight">
-            <b>DB-SNUbiz Global Startup Challenge 2023</b> <a href="https://www.kuas.ac.jp/en/news/kuas-e-student-advances-to-finals-at-db-snubiz-startup-challenge-2023/">Global Finalist(1st Place in Japan)</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <b>Google(Japan) Data-Centre Hardware Hackathon</b>  <a href="https://www.kuas.ac.jp/en/news/kuas-e-student-takes-2nd-place-at-google-data-centre-hardware-hackathon/?doing_wp_cron=1711387928.5287790298461914062500">2nd Place Winner</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <b>The Blaise Pascal [Re]generative Quantum Challenge</b>  <a href="https://www.pasqal.com/articles/the-blaise-pascal-re-generative-quantum-challenge-the-journey-winning-projects-and-lessons-drawn">Finalist: Efficient Transport Network Design with Neutral Atom Arrays.</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <b>AI for Life Sciences Challenge</b> winners announcement <a href="https://youtu.be/zj9BV6CjcWM?feature=shared">3rd Place Winner: Ecosynth AI</a>
-          </div>
-
-        </div>
-
-        <!-- All Archived Highlights (Click to Show) -->
-        <div id="more-highlights" style="display: None">
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date">2023</p>DB-SNUbiz Global Startup Challenge 2023 <a href="https://www.kuas.ac.jp/en/news/kuas-e-student-advances-to-finals-at-db-snubiz-startup-challenge-2023/">Global Finalist(1st Place in Japan)</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date"></p>Google(Japan) Data-Centre Hardware Hackathon <a href="https://www.kuas.ac.jp/en/news/kuas-e-student-takes-2nd-place-at-google-data-centre-hardware-hackathon/">2nd Place Winner</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date"></p>The Blaise Pascal [Re]generative Quantum Challenge <a href="https://www.pasqal.com/articles/the-blaise-pascal-re-generative-quantum-challenge-the-journey-winning-projects-and-lessons-drawn">Finalist: Efficient Transport Network Design with Neutral Atom Arrays.</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date"></p>AI for Life Sciences Challenge <a href="https://youtu.be/zj9BV6CjcWM?feature=shared">3rd Place Winner: Ecosynth AI</a>
-          </div>
-
-          
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date">2022</p><a href="https://www.credential.net/04003118-6833-4926-897e-586c92205905#gs.6y03ez">Tensorflow Certified Developer</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date"></p> <a href="https://www.credly.com/badges/8dd6eca9-e325-441e-9e35-5f47a82342d2/public_url">IBM Qiskit Advocate</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date"></p>IBM Quantum Challenge - Fall  <a href="https://www.credly.com/badges/ff175713-450b-4534-951b-f60723750f5e/public_url">Achievement: Advanced</a> 
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date"></p>Certified Associate Developer:  <a href="https://www.credly.com/badges/f1864298-daf1-45ca-9929-2bc71f581c71/public_url">Quantum Computation Using Qiskit V0.2X</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date"></p>Qiskit Global Summer School(QGSS): <a href="https://www.credly.com/badges/73ac8c68-cef9-40a5-b909-90e3e62eacaa/public_url">Quantum Simulations</a> 
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date"></p>IBM Quantum Spring Challenge - Spring <a href="https://www.credly.com/badges/e798bc39-6446-4d53-b1ff-51ded7bd85d4/public_url">Achievement: Advanced</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date"></p>Qhack Coding Master</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date">2021</p> 3rd Place Winner: UDSM/UNICEF - U-Report RapidPro Tech Hackathon  
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date"></p>IBM Quantum Challenge - Africa <a href="https://www.credly.com/badges/842fa388-3a93-4c06-80cb-d4698b256f37/public_url">Achievement: Advanced</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date"></p>IBM Quantum Challenge - Fall <a href="https://www.credly.com/badges/d094f078-22cf-42e9-b06d-2f8d5d04bc5e/public_url">Achievement: Advanced</a>
-          </div>
-
-          <div class="list-item highlight" data-category="highlight">
-            <p class="date">2020</p>Tanzania Idealab.ai Hackathon <a href="https://www.ai.or.tz/idealab/index.html">1st Place Winner: Elixir</a>
-          </div>
-          
-
-        </div>
-
-        <!-- Toggle highlights button. -->
-        <div class="list-item highlight toggle-button" data-category="highlight">
-          <a id="toggle_highlights_button" href="javascript:toggle_highlights()">Show more</a>
-        </div>
-
-
-
-
-        <!-- Publications -->
-        <div class="list-item publication" data-category="publication">
-          <a href="https://www.mdpi.com/2313-433X/9/7/128" class="thumbnail">
-            <img src="images/jimaging-09-00128-ag.png" alt="Publication Thumbnail" width="180px">
-          </a>        
-          </a>
-          <div class="project-description">
-            <h3><a href="https://www.mdpi.com/2313-433X/9/7/128">Hybrid Classical–Quantum Transfer Learning for Cardiomegaly Detection in Chest X-rays</a></h3>
-            <p>
-              Pierre Decoodt, Tan Jun Liang, Soham Bopardikar, Hemavathi Santhanam, Alfaxad Eyembe, Begonya Garcia-Zapirain, and Daniel Sierra-Sosa<br>
-                <i>Journal of Imaging(MDPI) 2023</i><br>
-                <a href="https://www.mdpi.com/2313-433X/9/7/128#">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="https://github.com/quantum-ai-for-cardiac-imaging/cardiomegaly-chest-x-ray">Code</a>
-                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
-            </p>
-          </div>
-        </div>
-
-
-        <!-- Talks -->
-        <!-- <div class="list-item talk description" data-category="talk">
-          Some of my slides can be found <a href="https://slides.com/andyzeng">here</a>
-        </div> -->
-
-        <div class="list-item talk" data-category="talk">
-          <p class="date">2023</p>News: <a href="https://www.kuas.ac.jp/en/news/kuas-e-student-takes-2nd-place-at-google-data-centre-hardware-hackathon/"> Alfaxad  Takes 2nd Place at Google Data Centre Hardware Hackathon</a> 
-        </div>
-        <div class="list-item talk" data-category="talk">
-          <p class="date">2023</p>News: <a href="https://www.kuas.ac.jp/en/news/kuas-e-student-advances-to-finals-at-db-snubiz-startup-challenge-2023/">Alfaxad Advances to Finals at DB-SNUbiz Startup Challenge 2023</a>
-        </div>
+            <div class="profile-image">
+                <img src="images/DF-Photoroom.jpg" alt="Alfaxad Eyembe">
+            </div>
+        </header>
         
-
+        <section id="about">
+            <div class="section-title">about</div>
+            <p>Most people call me <span class="highlight-text">Alfa</span>. I am an aspiring AI researcher and engineer based in Kyoto, Japan.</p>
+        </section>
         
-
-
-
-
-
-        <!-- Services -->
-        <!-- <div class="list-item misc" data-category="misc">
-          <p class="date">2023</p>Co-Organizer, RSS Workshop on <a href="https://sites.google.com/andrew.cmu.edu/rss-2023-articulate-robots">Articulate Robots</a>
-        </div> -->
-
+        <section id="work">
+            <div class="section-title">work</div>
+            <p>I'm currently building <a href="https://www.nadhari.ai/" target="_blank">Nadhari</a>, AI research lab advancing frontier AI research and applications in Sub-Saharan Africa and beyond (with the support of O'shaughnessy Ventures).</p>
+        </section>
         
-
-      </div>
-
-      <div id="footer">Website inspired by <a href="https://andyzeng.github.io/">Andy's website</a>, Feel free to download this website's <a href="https://github.com/andyzeng/andyzeng.github.io">template</a>.</div>
-
+        <section id="contact">
+            <div class="section-title">contact</div>
+            <div class="contact-links">
+                <a href="https://twitter.com/alfxad" target="_blank">Twitter</a>
+                <a href="https://github.com/Alfaxad" target="_blank">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=pEwusqEAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                <a href="https://www.linkedin.com/in/alfaxad-eyembe-b29a45162/" target="_blank">LinkedIn</a>
+                <a href="mailto:alfaxad@nadhari.ai">alfaxad@nadhari.ai</a>
+            </div>
+        </section>
+        
+        <section id="highlights">
+            <div class="section-title">highlights</div>
+            <ul class="highlights-list">
+                <li>
+                    <span class="date">2025</span>
+                    Founded <a href="https://www.nadhari.ai/" target="_blank">Nadhari AI</a> - AI research lab for Sub-Saharan Africa
+                </li>
+                <li>
+                    <span class="date">2024</span>
+                    <a href="https://youtu.be/zj9BV6CjcWM?feature=shared" target="_blank">AI for Life Sciences Challenge</a> - 3rd Place Winner: Ecosynth AI
+                </li>
+                <li>
+                    <span class="date">2024</span>
+                    <a href="https://www.pasqal.com/articles/the-blaise-pascal-re-generative-quantum-challenge-the-journey-winning-projects-and-lessons-drawn" target="_blank">The Blaise Pascal [Re]generative Quantum Challenge</a> - Finalist: Efficient Transport Network Design with Neutral Atom Arrays
+                </li>
+                <li>
+                    <span class="date">2024</span>
+                    <a href="https://www.kuas.ac.jp/en/news/kuas-e-student-takes-2nd-place-at-google-data-centre-hardware-hackathon/" target="_blank">Google (Japan) Data-Centre Hardware Hackathon</a> - 2nd Place Winner
+                </li>
+                <li>
+                    <span class="date">2023</span>
+                    <a href="https://www.kuas.ac.jp/en/news/kuas-e-student-advances-to-finals-at-db-snubiz-startup-challenge-2023/" target="_blank">DB-SNUbiz Global Startup Challenge 2023</a> - Global Finalist (1st Place in Japan)
+                </li>
+                <li>
+                    <span class="date">2023</span>
+                    Published <a href="https://www.mdpi.com/2313-433X/9/7/128" target="_blank">Hybrid Classical–Quantum Transfer Learning for Cardiomegaly Detection in Chest X-rays</a> in Journal of Imaging (MDPI)
+                </li>
+            </ul>
+        </section>
+        
+        <section id="news">
+            <div class="section-title">news</div>
+            <div class="news-item">
+                <p><span class="date">2024</span><strong>Alfaxad Takes 2nd Place at Google Data Centre Hardware Hackathon</strong></p>
+                <p>Competed against top engineering students in Japan to develop innovative solutions for data center optimization. <a href="https://www.kuas.ac.jp/en/news/kuas-e-student-takes-2nd-place-at-google-data-centre-hardware-hackathon/" target="_blank">Read more →</a></p>
+            </div>
+            <div class="news-item">
+                <p><span class="date">2023</span><strong>Alfaxad Advances to Finals at DB-SNUbiz Startup Challenge 2023</strong></p>
+                <p>Represented Japan in the global finals of this prestigious startup competition, securing 1st place nationally. <a href="https://www.kuas.ac.jp/en/news/kuas-e-student-advances-to-finals-at-db-snubiz-startup-challenge-2023/" target="_blank">Read more →</a></p>
+            </div>
+        </section>
     </div>
-
-    <script>
-
-      // Isotope grid.
-      var $grid = $('.grid').isotope({
-        itemSelector: '.list-item',
-        layoutMode: 'fitRows',
-        transitionDuration: 0,
-        stagger: 10,
-        initLayout: false,
-        getSortData: {
-          name: '.name',
-          symbol: '.symbol',
-          number: '.number parseInt',
-          category: '[data-category]',
-          weight: function( itemElem ) {
-            var weight = $( itemElem ).find('.weight').text();
-            return parseFloat( weight.replace( /[\(\)]/g, '') );
-          }
-        }
-      });
-
-      // Bind filter button click.
-      $('#filters').on( 'click', 'button', function() {
-        var filterValue = $( this ).attr('data-filter');
-        localStorage.setItem('filterValue', filterValue);
-        $grid.isotope({ filter: filterValue });
-      });
-
-      // Change is-checked class on buttons.
-      $('.button-group').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'button', function() {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          $( this ).addClass('is-checked');
-        });
-      });
-
-      function update_isotope() {
-        // Retrieve cached button click.
-        var defaultFilterValue = localStorage.getItem('filterValue');
-        if (defaultFilterValue == null) {
-          defaultFilterValue = ".highlight"
-        }
-        $grid.isotope({ filter: defaultFilterValue });
-        var buttons = document.getElementsByClassName("button");
-        for (var currButton of buttons) {
-          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
-            currButton.classList.add('is-checked');
-          } else {
-            currButton.classList.remove('is-checked');
-          }
-        }
-      }
-
-      function toggle_bio() {
-        var x = document.getElementById("more-bio");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-
-      function toggle_highlights() {
-        var x = document.getElementById("main-highlights");
-        var y = document.getElementById("more-highlights");
-        var b = document.getElementById("toggle_highlights_button")
-        if (y.style.display === "none") {
-          x.style.display = "none";
-          y.style.display = "block";
-          b.innerHTML = "Show less"
-          update_isotope();
-        } else {
-          x.style.display = "block";
-          y.style.display = "none";
-          b.innerHTML = "Show more"
-          update_isotope();
-        }
-      }
-
-      update_isotope();
-
-    </script>
-  </body>
+</body>
 </html>
